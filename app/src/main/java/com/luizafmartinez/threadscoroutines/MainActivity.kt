@@ -3,6 +3,7 @@ package com.luizafmartinez.threadscoroutines
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.luizafmartinez.threadscoroutines.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,9 +25,25 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnIniciar.setOnClickListener {
 
+            repeat(30) { indice ->
+                Log.i("info_thread", "Executando: $indice")
+                Thread.sleep(1000)  // 1000 ms = 1 segundo
+            }
         }
 
     }
+
+    inner class MinhaClasse : Thread() {
+
+        override fun run() {
+            super.run()
+
+
+
+        }
+
+    }
+
 }
 
 
