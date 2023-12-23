@@ -37,22 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun run() {
             super.run()
-
-
-
         }
-
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
