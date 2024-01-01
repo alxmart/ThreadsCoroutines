@@ -38,12 +38,10 @@ class MainActivity : AppCompatActivity() {
     inner class MinhaThread : Thread() {
         override fun run() {
             super.run()
-
             repeat(30) { indice ->
                 Log.i("info_thread", "Executando: $indice T: ${currentThread().name}")
                 sleep(1000)// Equivale a 1 segundo / total: 30 seg exec
             }
-
         }
     }
 
