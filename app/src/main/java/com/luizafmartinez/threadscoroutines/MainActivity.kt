@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnIniciar.setOnClickListener {
 
             MinhaThread().start()
+            /*
+            repeat(15) { indice ->
+                Log.i("info_thread", "Executando: $indice T: ${Thread.currentThread().name}")
+                Thread.sleep(1000)// Equivale a 1 segundo / total: 30 seg exec
+            }
+            */
         }
     }
 
