@@ -12,7 +12,6 @@ class SegundaActivity : AppCompatActivity() {
         ActivitySegundaBinding.inflate(layoutInflater)
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -21,7 +20,6 @@ class SegundaActivity : AppCompatActivity() {
         binding.btnFechar.setOnClickListener {
             finish()
         }
-
 
     }
 }
